@@ -10,6 +10,7 @@
 # Nuxt.js build / generate output
 .nuxt
 dist
+/Sourse
 
 # misc
 .DS_Store

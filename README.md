@@ -3,8 +3,3 @@
 * telegram: [@DisRachik](https://t.me/DisRachik);
 * discord: [Rachik](https://discordapp.com/users/971828003745198150/);
 ******
-
-### List ###
-
-1. Project Uber
-  
