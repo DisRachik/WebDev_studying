@@ -29,3 +29,20 @@
     }
   }
 }
+
+@media (max-width: 960px) {
+  .advantages {
+    padding: 70px 10px 78px 10px;
+  }
+}
+
+@media (max-width: 720px) {
+  .advantages {
+    &__wrapper {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
+}
+
+@media (max-width: 540px) {}

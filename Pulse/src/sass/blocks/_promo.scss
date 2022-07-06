@@ -19,12 +19,12 @@
   }
   &__icons {
     margin-top: 65px;
-    width: 425px;
+    max-width: 425px;
     display: flex;
     justify-content: space-between;
   }
   &__icon {
-    width: 108px;
+    max-width: 108px;
     text-align: center;
     @include fonts(500, 14px, #ffffff);
     img {
@@ -39,6 +39,53 @@
     a {
       color: #ffffff;
       text-transform: uppercase;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .promo {
+    padding: 21px 20px 93px 20px;
+  }
+}
+
+@media (max-width: 720px) {
+  .promo {
+    padding-bottom: 45px;
+    &__header {
+      text-align: right;
+      font-size: 34px;
+    }
+    &__subheader {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .promo {
+    padding-bottom: 0;
+    &__wrapper {
+      margin-top: 45px;
+    }
+    &__header {
+      text-align: center;
+      font-size: 30px;
+    }
+    &__subheader {
+      margin-top: 5px;
+      text-align: center;
+      font-size: 18px;
+    }
+    &__icons {
+      margin-top: 30px;
+    }
+    &__icon {
+      font-size: 11px;
+      img {
+        width: 35px;
+        height: 35px;
+      }
     }
   }
 }

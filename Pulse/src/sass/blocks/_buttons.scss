@@ -13,3 +13,12 @@
     font-size: 16px;
   }
 }
+
+@media (max-width: 540px) {
+  .btn {
+    &-main {
+      margin-top: 33px;
+      width: 270px;
+    }
+  }
+}
