@@ -34,7 +34,7 @@
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 768px) {
   .header {
     &__logo {
       max-width: 50px;
@@ -58,7 +58,7 @@
   }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 576px) {
   .header {
     flex-wrap: wrap;
     &__official {

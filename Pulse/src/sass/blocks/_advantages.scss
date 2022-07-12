@@ -30,13 +30,13 @@
   }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 992px) {
   .advantages {
     padding: 70px 10px 78px 10px;
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 768px) {
   .advantages {
     &__wrapper {
       flex-wrap: wrap;
@@ -45,4 +45,3 @@
   }
 }
 
-@media (max-width: 540px) {}

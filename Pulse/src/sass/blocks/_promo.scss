@@ -43,13 +43,13 @@
   }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 992px) {
   .promo {
     padding: 21px 20px 93px 20px;
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 768px) {
   .promo {
     padding-bottom: 45px;
     &__header {
@@ -62,7 +62,7 @@
   }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 576px) {
   .promo {
     padding-bottom: 0;
     &__wrapper {
