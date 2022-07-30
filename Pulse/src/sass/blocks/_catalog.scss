@@ -154,3 +154,36 @@
     }
   }
 }
+
+@media (max-width: 992px) {
+  .catalog {
+    &__content {
+      justify-content: space-around;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .catalog {
+    margin-bottom: 50px;
+    &__tab {
+      width: 165px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .catalog {
+    padding-bottom: 30px;
+    &__tabs {
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+    &__tab {
+      margin-top: 10px;
+    }
+    &__content {
+      margin-top: 30px;
+    }
+  }
+}
