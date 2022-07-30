@@ -1,0 +1,267 @@
+@media (max-width: 1200px) {
+  header {
+    .company {
+      max-width: 182px;
+      .company-name {
+        font-size: 26px;
+      }
+    }
+    nav {
+      width: 58%;
+    }
+  }
+
+  main {
+    .preview {
+      height: 600px;
+      .preview-form {
+        .preview-form__title {
+          font-size: 59px;
+          line-height: 71px;
+        }
+        .preview-form__text {
+          font-size: 15px;
+        }
+        form {
+          .preview-form__btn {
+            width: 32%;
+          }
+        }
+      }
+    }
+
+    .steps {
+      .steps-block {
+        .steps-block__item {
+          .steps-block__descr {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+
+    .stories {
+      .stories-block {
+        .stories-block__descr {
+          h3 {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    margin: 0 3.5%;
+  }
+  header {
+    .menu {
+      .menu-item {
+        .menu-item__link {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  main {
+    .steps {
+      .steps-block {
+        .steps-block__item {
+          .steps-block__descr {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  header {
+    .company {
+      max-width: 162px;
+      .company-name {
+        font-size: 22px;
+      }
+    }
+    nav {
+      width: 37%;
+      height: 60%;
+    }
+    .menu {
+      flex-wrap: wrap;
+      align-items: space-between;
+      .menu-item {
+        margin-top: 6px;
+      }
+    }
+  }
+
+  main {
+    .preview {
+      height: 530px;
+      .preview-form {
+        width: 100%;
+        .preview-form__text {
+          font-size: 14px;
+        }
+        form {
+          .preview-form__btn {
+            width: 32%;
+          }
+        }
+      }
+    }
+
+    .title {
+      font-size: 34px;
+    }
+
+    .steps {
+      .steps-block {
+        .steps-block__item:first-child {
+          margin: 0;
+          width: 33.33%;
+        }
+        .steps-block__item {
+          .steps-block__descr {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+
+    .stories {
+      margin-top: 90px;
+      height: 922px;
+      .container {
+        height: 927.5px;
+        padding: 0 3.5%;
+        position: absolute;
+        top: -63px;
+        left: 0;
+        .title {
+          margin-bottom: 45px;
+        }
+        .stories-btn {
+          margin-top: 18px;
+        }
+      }
+      .stories-block {
+        .stories-block__descr {
+          h3 {
+            font-size: 18px;
+          }
+          p {
+            margin-top: 12px;
+            font-size: 14px;
+          }
+          a {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    .container {
+      .footer-link {
+        width: 100px;
+      }
+    }
+  }
+  .popup {
+    .popup-container {
+      width: 90%;
+      .popup-body {
+        h4 {
+          margin-top: 15px;
+          margin-bottom: 15px;
+          font-size: 25px;
+        }
+        .popup-login {
+          .popup-btn {
+            height: 46px;
+            font-size: 17px;
+          }
+          .popup-separator {
+            margin-top: 15px;
+          }
+        }
+        .popup-form {
+          margin: 0 auto;
+        }
+        .popup-form {
+          label {
+            input {
+              margin-top: 0;
+              margin-bottom: 10px;
+              height: 46px;
+            }
+          }
+          .popup-form__btn {
+            height: 46px;
+          }
+        }
+        hr {
+          margin-top: 15px;
+        }
+        .popup-login__register {
+          margin: 15px auto;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  header {
+    .company {
+      width: 130px;
+      .company-logo {
+        margin: auto;
+      }
+    }
+    nav {
+      align-self: flex-start;
+    }
+    .menu {
+      flex-direction: column;
+      .menu-item {
+        font-size: 12px;
+      }
+    }
+  }
+
+  main {
+    .preview {
+      .preview-form {
+        .preview-form__title {
+          line-height: 56px;
+          font-size: 52px;
+        }
+        form {
+          .preview-form__btn {
+            width: 50%;
+            height: 35px;
+            position: absolute;
+            top: auto;
+            bottom: 2px;
+          }
+        }
+      }
+    }
+
+    .steps {
+      .steps-block {
+        .steps-block__item {
+          width: 33.33%;
+        }
+      }
+    }
+  }
+}

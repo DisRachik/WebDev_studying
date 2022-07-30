@@ -1,0 +1,13 @@
+@mixin btn_hover() {
+  &:hover {
+    display: block;
+    border: 2px solid #000000;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    opacity: 0.7;
+    transition: 1s all;
+    letter-spacing: 7px;
+    font-variant: small-caps;
+    font-style: italic;
+    text-shadow: 2px 3px 3px #0cc1da;
+  }
+}
