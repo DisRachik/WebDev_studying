@@ -1,0 +1,196 @@
+.popup {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 5;
+  transform: translateY(-200%);
+  transition: 1.5s all;
+  &-active {
+    transform: translateY(0%);
+  }
+  .popup-close {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .popup-container {
+    margin: 0 auto;
+    margin-top: 56px;
+    width: 650px;
+    overflow: hidden;
+    .popup-body {
+      display: flex;
+      width: 200%;
+
+      .popup-login {
+        width: 50%;
+        height: 100%;
+        background: linear-gradient(177.09deg, #ffffff 6.15%, #0d606f 202.69%);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 16px;
+        transform: translateX(-100%);
+        &-active {
+          transform: translateX(0%);
+        }
+        .popup-btn {
+          margin: 0 auto;
+          width: 86.15%;
+          height: 56px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: none;
+          border-radius: 10px;
+          font-family: $red-hat;
+          font-weight: 400;
+          font-size: 20px;
+          color: #ffffff;
+          cursor: pointer;
+        }
+        .popup-btn__fb {
+          background: #1877f2;
+          box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08),
+            0px 2px 3px rgba(13, 96, 111, 0.16);
+          &::before {
+            content: url('../img/icons/Login_window/Facebook_Logo.svg');
+            padding-right: 15px;
+          }
+        }
+        .popup-btn__google {
+          margin-top: 20px;
+          background: #ffffff;
+          box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08),
+            0px 2px 3px rgba(13, 96, 111, 0.16);
+          color: $main-color;
+          &::before {
+            content: url('../img/icons/Login_window/Google_Logo.svg');
+            padding-right: 15px;
+          }
+        }
+        .popup-separator {
+          margin: 0 auto;
+          margin-top: 30px;
+          width: 86.15%;
+          height: 24px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          hr {
+            margin-top: 0;
+            width: 100%;
+          }
+          p {
+            margin: 0 9px;
+            font-weight: 700;
+            font-size: 20px;
+            color: rgba(13, 96, 111, 0.5);
+          }
+        }
+        .popup-login__recovery {
+          display: block;
+          margin-top: 10px;
+          text-align: center;
+          color: $main-color;
+          font-weight: 700;
+          font-size: 15px;
+          text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+          &:hover {
+            color: rgb(24, 81, 173);
+          }
+        }
+      }
+
+      .popup-register {
+        margin: auto;
+        width: 50%;
+        height: 66.06%;
+        background: linear-gradient(177.09deg, #ffffff 6.15%, #0d606f 202.69%);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 16px;
+        transform: translateX(0%);
+        &-active {
+          transform: translateX(-100%);
+        }
+      }
+      h4 {
+        margin-top: 25px;
+        margin-bottom: 30px;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38px;
+        text-align: center;
+        color: #0d606f;
+      }
+      hr {
+        margin: 0 auto;
+        margin-top: 26px;
+        width: 86.15%;
+        height: 1px;
+        border: 1px solid rgba(13, 96, 111, 0.5);
+        border-bottom: none;
+      }
+      .popup-form {
+        margin: 0 auto;
+        margin-top: 10px;
+        width: 86.15%;
+        label {
+          width: 100%;
+          font-weight: 400;
+          font-size: 16px;
+          color: $main-color;
+          input {
+            margin-top: 5px;
+            margin-bottom: 20px;
+            width: 100%;
+            height: 54px;
+            border: none;
+            background: #ffffff;
+            box-shadow: inset 0px 0px 3px rgba(13, 96, 111, 0.08),
+              inset 0px 2px 3px rgba(13, 96, 111, 0.16);
+            border-radius: 10px;
+          }
+        }
+        .popup-form__btn {
+          margin-top: 5px;
+          width: 100%;
+          height: 54px;
+          border: none;
+          background-color: $main-color;
+          box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08),
+            0px 2px 3px rgba(13, 96, 111, 0.16);
+          border-radius: 10px;
+          cursor: pointer;
+          color: #ffffff;
+          font-family: $red-hat;
+          font-weight: 400;
+          font-style: 20px;
+          text-transform: capitalize;
+        }
+      }
+      .popup-login__register {
+        margin-top: 20px;
+        margin-bottom: 23px;
+        display: block;
+        text-align: center;
+        font-weight: 700;
+        font-size: 15px;
+        color: rgba(13, 96, 111, 0.5);
+        text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+        text-decoration-line: none;
+        span {
+          color: $main-color;
+          text-decoration-line: underline;
+        }
+        &:hover {
+          text-decoration-line: underline;
+          color: rgb(24, 81, 173);
+        }
+      }
+    }
+  }
+}
