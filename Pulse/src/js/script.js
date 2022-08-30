@@ -48,7 +48,7 @@ $(document).ready(function () {
         $('.catalog-item__list').eq(i).toggleClass('catalog-item__list-active');
       });
     });
-  };
+  }
 
   toggleSlide('.catalog-item__link');
   toggleSlide('.catalog-item__back');
@@ -60,11 +60,39 @@ $(document).ready(function () {
   $('.modal__close').on('click', function () {
     $('.overlay, #consultation, #order, #thanks').fadeOut('slow');
   });
-  
+
   $('.btn-mini').each(function (i) {
     $(this).on('click', function () {
       $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
       $('.overlay, #order').fadeIn('slow');
-    })
+    });
   });
+
+  // налаштування jQuery.validate
+  function validateForms(form) {
+    $(form).validate({
+      rules: {
+        name: 'required',
+        phone: 'required',
+        email: {
+          required: true,
+          email: true,
+        },
+      },
+      messages: {
+        name: 'Пожалуйста введите свое имя!',
+        phone: 'Пожалуйста введите свой номер телефона!',
+        email: {
+          required: 'Пожалуйста введите свой email!',
+          email:
+            'Не правильно введен email, необходимый формат email - name@domain.com',
+        },
+      },
+    });
+  }
+
+  validateForms('#consultation-form');
+  validateForms('#consultation form');
+  validateForms('#order form');
+
 });
