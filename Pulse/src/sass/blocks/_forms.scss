@@ -19,3 +19,14 @@
     margin-top: 25px;
   }
 }
+
+@media (max-width: 576px) {
+  .feed-form {
+    width: 100%;
+    &_mt25 {
+      input {
+        padding: 0;
+      }
+    }
+  }
+}

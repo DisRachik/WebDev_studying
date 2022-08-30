@@ -41,3 +41,11 @@
 #consultation, #order, #thanks {
   display: none;
 }
+
+@media (max-width: 576px) {
+  .modal {
+    width: 80%;
+    padding: 20px;
+    left: 45%;
+  }
+}
