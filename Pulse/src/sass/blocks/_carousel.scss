@@ -1,5 +1,8 @@
 .carousel {
   padding: 81px 0;
+  h2 {
+    display: none;
+  }
   &__inner {
     max-width: 750px;
     margin: 0 auto;
