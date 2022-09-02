@@ -16,6 +16,12 @@
   &__icon {
     max-width: 70px;
     max-height: 70px;
+    &-animated {
+      animation: heartbeat 2s ease infinite;
+      &:hover {
+        animation-play-state: paused;
+      }
+    }
   }
   &__subtitle {
     @include fonts(700, 18px, #0d0d0d)
