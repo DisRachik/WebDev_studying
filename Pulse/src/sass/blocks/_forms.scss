@@ -15,7 +15,7 @@
       margin-bottom: 20px;
     }
   }
-  &_mt25 {
+  &-mt25 {
     margin-top: 25px;
   }
 }
@@ -23,7 +23,7 @@
 @media (max-width: 576px) {
   .feed-form {
     width: 100%;
-    &_mt25 {
+    &-mt25 {
       input {
         padding: 0;
       }

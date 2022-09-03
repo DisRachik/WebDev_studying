@@ -33,7 +33,7 @@
     @include fonts(500, 14px, #0d0d0d);
     text-align: center;
   }
-  &_mini {
+  &-mini {
     min-height: 140px;
   }
   .error {
