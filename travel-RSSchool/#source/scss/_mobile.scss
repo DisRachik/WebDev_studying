@@ -1,0 +1,366 @@
+@media (max-width: 391px) {
+  .container {
+    margin: 0 15px;
+  }
+  header {
+    background: linear-gradient(180deg, #0d606f 0%, rgba(13, 96, 111, 0) 25.1%);
+    border-radius: 30px 30px 0 0;
+    box-shadow: none;
+    height: 251px;
+    overflow: hidden;
+    .company {
+      max-width: none;
+      width: 220px;
+      height: 100%;
+    }
+    .container {
+      margin: 0;
+      height: 100%;
+      overflow: hidden;
+      justify-content: space-between;
+      align-items: flex-start;
+      .humburger {
+        margin: 45px 20px 0 0;
+        width: 35px;
+        height: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        span {
+          width: 26.25px;
+          height: 2.67px;
+          margin-bottom: 4px;
+          display: block;
+          background-color: #ffffff;
+        }
+      }
+    }
+    .company {
+      .company-logo {
+        margin: 45px 0 0 16px;
+        width: 29px;
+      }
+      .company-name {
+        display: none;
+      }
+    }
+    .btn-login {
+      display: none;
+    }
+
+    .nav {
+      width: 165px;
+      height: 250px;
+      background: #f2785c;
+      box-shadow: 0px 4px 3px rgba(13, 96, 111, 0.25);
+      border-radius: 10px;
+      position: absolute;
+      top: 0;
+      right: -100%;
+      z-index: 3;
+      transition: 1.5s all;
+      &-active {
+        right: 0;
+      }
+      .close {
+        display: flex;
+        margin: 8px 0 0 8px;
+        width: 30px;
+        height: 30px;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 15px;
+          height: 15px;
+        }
+      }
+    }
+
+    .menu {
+      li:nth-child(5),
+      li:nth-child(6) {
+        display: initial;
+      }
+      padding: 0;
+      margin: 6px 0;
+      height: 176px;
+      align-items: flex-end;
+      justify-content: space-between;
+      .menu-item {
+        margin: 0 15px;
+        .menu-item__link {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  main {
+    .preview {
+      margin-top: -251px;
+      height: 251px;
+      border-radius: 30px 30px 0 0;
+      background: url('../img/mobile/mob_bg_header.jpg') center (center / cover)
+        no-repeat;
+      .preview-form {
+        height: 48px;
+        form {
+          margin-top: 20px;
+          height: 100%;
+          input::placeholder {
+            padding: 16.17px 0 0 16.55px;
+            font-size: 14px;
+          }
+          .preview-form__btn {
+            width: 92px;
+            height: 30px;
+            top: 9px;
+            right: 9px;
+            font-size: 11px;
+          }
+        }
+        .preview-form__title {
+          display: none;
+        }
+        .preview-form__text {
+          display: none;
+        }
+      }
+    }
+
+    .title {
+      margin-top: 20px;
+      padding-top: 2px;
+      font-size: 14px;
+    }
+
+    .steps {
+      height: 153px;
+      .steps-block {
+        margin-top: 21px;
+        .steps-block__item:first-child {
+          width: 70px;
+        }
+        .steps-block__item {
+          width: 70px;
+          .steps-block__img {
+            width: 70px;
+            height: 70px;
+            img {
+              width: 35px;
+              height: 35px;
+            }
+          }
+          .steps-block__descr {
+            margin-top: 20px;
+            font-size: 10px;
+            line-height: 12px;
+          }
+        }
+        .steps-block__item:nth-child(1) {
+          img {
+            height: 31.5px;
+          }
+          .steps-block__descr {
+            text-align: left;
+            margin-right: -24px;
+          }
+        }
+        .steps-block__item:nth-child(2) {
+          .steps-block__descr {
+            text-align: center;
+            margin-right: -20.5px;
+            margin-left: -20.5px;
+          }
+        }
+        .steps-block__item:nth-child(3) {
+          img {
+            width: 40px;
+            height: 30px;
+          }
+          .steps-block__descr {
+            text-align: right;
+            margin-left: -28px;
+          }
+        }
+      }
+    }
+
+    .destinations {
+      .container {
+        position: relative;
+      }
+      .title {
+        margin-top: 20px;
+      }
+      .destinations-block {
+        margin: 0 auto;
+        margin-top: 20px;
+        width: 100%;
+        .destinations-block__foto {
+          margin: 0 15px;
+          width: 100%;
+          > img {
+            border-radius: 16px;
+          }
+          :nth-child(1) {
+            display: none;
+          }
+          :nth-child(2) {
+            display: initial;
+          }
+          .destinations-block__foto-name {
+            top: 10px;
+            font-size: 20px;
+          }
+        }
+      }
+      .destinations-arrowl {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        left: 20px;
+        top: 48%;
+        z-index: 4;
+        div {
+          width: 18px;
+          height: 4px;
+          background: $second-color;
+          border-radius: 50px;
+          &:nth-child(1) {
+            transform: rotate(-45deg) translateY(2px) translateX(6.27px);
+          }
+          &:nth-child(2) {
+            transform: rotate(45deg) translateY(-2px) translateX(6.27px);
+          }
+        }
+      }
+      .destinations-arrowr {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        flex-direction: column;
+        position: absolute;
+        right: 20px;
+        top: 48%;
+        z-index: 5;
+        div {
+          width: 18px;
+          height: 4px;
+          background: $second-color;
+          border-radius: 50px;
+          &:nth-child(1) {
+            transform: rotate(-135deg) translateY(-2px) translateX(6.27px);
+          }
+          &:nth-child(2) {
+            transform: rotate(135deg) translateY(2px) translateX(6.27px);
+          }
+        }
+      }
+      .destinations-scrol {
+        width: 36px;
+        height: 8px;
+        margin-top: -19px;
+        position: relative;
+        z-index: 3;
+        .dot {
+          width: 8px;
+          height: 8px;
+        }
+      }
+    }
+
+    .destinations-btn,
+    .stories-btn {
+      margin-top: 22px;
+      padding-right: 12px;
+      width: 92px;
+      height: 30px;
+      font-size: 11px;
+      &::before {
+        content: url(../img/icons/mobile/arrow.svg);
+        left: 12px;
+        top: 10px;
+      }
+    }
+    .stories {
+      margin-top: 49px;
+      margin-bottom: -65px;
+      height: 693px;
+      background: url('../img/mobile/mob_bg_footer.jpg') center (center / cover)
+        no-repeat;
+      border-radius: 0 0 30px 30px;
+      .container {
+        height: 657px;
+        top: -29px;
+        padding: 0 15px;
+        .title {
+          margin-bottom: 20px;
+        }
+        .stories-btn {
+          margin-top: 10px;
+          padding-right: 0;
+          padding-left: 29.5px;
+          text-align-last: left;
+          &:hover {
+            text-align: left;
+            font-size: 10px;
+          }
+        }
+      }
+      .stories-block {
+        margin-top: 15px;
+        height: 130px;
+        .stories-block__img {
+          width: 43.01%;
+          :nth-child(1) {
+            display: none;
+          }
+          :nth-child(2) {
+            display: initial;
+          }
+        }
+        .stories-block__descr {
+          width: 54.11%;
+          margin: 0;
+          h3 {
+            margin-top: 7px;
+            font-weight: 700;
+            font-size: 11px;
+          }
+          p {
+            margin-top: 10px;
+            margin-bottom: -4px;
+            height: 65.6%;
+            font-size: 9px;
+            line-height: 11px;
+          }
+          a {
+            margin-top: -11px;
+            font-size: 9px;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    .container {
+      justify-content: center;
+      .footer-link {
+        display: none;
+      }
+      .footer-text {
+        display: none;
+      }
+      .footer-social {
+        height: 33.65px;
+      }
+    }
+  }
+}

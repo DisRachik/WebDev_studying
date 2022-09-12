@@ -8,6 +8,7 @@
 
 1. **Project Uber**
     - https://disrachik.github.io/WebDev_studying/Uber/
+
 ***
 
 2. **Project travel travel performed during Stage0 at RSSchool**
@@ -19,3 +20,4 @@
         - Clicking on the Login button (Account button in the mobile version) shows a generated login popup
         - Burger menu is implemented in the mobile version
 ***
+=======
