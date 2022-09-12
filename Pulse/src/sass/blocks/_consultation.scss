@@ -1,0 +1,38 @@
+.consultation {
+  min-height: 680px;
+  padding: 100px 0 92px 0;
+  background: url('../img/bg_form.png') center (center/cover) no-repeat;
+  &__descr {
+    margin-top: 80px;
+    @include fonts(500, 20px, #ffffff);
+    text-align: left;
+  }
+    .error {
+    border: 1px solid red;
+
+  }
+  label.error {
+    color: red;
+    margin-bottom: 15px;
+    border: none;
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 992px) {
+  .consultation {
+    padding: 100px 10px 92px 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .consultation {
+    min-height: auto;
+    padding: 50px 10px 26px 10px;
+    &__descr {
+      margin-top: 20px;
+      font-size: 13px;
+    }
+  }
+}
