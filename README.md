@@ -19,3 +19,15 @@
         - Clicking on the Login button (Account button in the mobile version) shows a generated login popup
         - Burger menu is implemented in the mobile version
 ***
+
+3. **Project  Pulse**
+    - https://disrachik.github.io/WebDev_studying/Pulse/src/
+        * Implemented an adaptive landing page message for using flex 3.1
+        * plugins / libraries used: 3.2
+            - slick;
+            - jQuery script for tabs;
+            - Magnific Popup;
+            - Masked Input Plugin for jQuery;
+            - PHPMailer;
+            - Animate.css
+***
